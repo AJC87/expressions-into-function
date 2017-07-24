@@ -32,3 +32,18 @@ var string = "My name is " + name;
 string += ", and my height is " + height;
 string += ", and my favorite color is " + favoriteColor;
 console.log(string);
+
+function personalIntroduction(name, height, favoriteColor) {
+     this.name = name
+     this.height = height
+     this.favoriteColor = favoriteColor
+
+     var string = "My name is " + this.name + ", and my height is " +
+     this.height + ", and my favorite color is " + this.favoriteColor
+
+     this.say = function() { return string }
+}
+
+var ashleyIntroduction = new personalIntroduction('Ashley', '5ft 7in', 'blue')
+console.log(ashleyIntroduction)
+console.log(ashleyIntroduction.say())
