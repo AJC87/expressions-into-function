@@ -1,3 +1,5 @@
+'use strict'
+
 // Clean up the code below with a single function called `personalIntroduction`
 // The new code should have the exact same functionality and output.
 
